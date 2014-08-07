@@ -1,0 +1,9 @@
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: file_database
+  pool: 5
+  username: file_username
+  password: file_password
+  host: file-host.com
+  port: 1234
