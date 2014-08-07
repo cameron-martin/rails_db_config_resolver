@@ -14,10 +14,18 @@ class RailsDbConfigResolver
   end
 
   def parse
-    file_config.merge(env_url_config).to_hash
+    merged_config.to_hash
   end
 
 private
+
+  def merged_config
+    if @env_url
+      file_config.merge(env_url_config)
+    else
+      file_config
+    end
+  end
 
   def env_url_config
     DatabaseConfig.from_url(@env_url)

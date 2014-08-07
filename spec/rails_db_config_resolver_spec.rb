@@ -21,4 +21,20 @@ describe RailsDbConfigResolver do
 
   end
 
+  context 'with full database file, and no env file' do
+
+    subject { RailsDbConfigResolver.new(DB_FILE, nil, 'production') }
+
+    its(:parse) { should eq(
+                            adapter:  'postgresql',
+                            database: 'file_database',
+                            pool:     5,
+                            username: 'file_username',
+                            password: 'file_password',
+                            host:     'file-host.com',
+                            port:     1234
+    ) }
+
+  end
+
 end
