@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ['cameronmartin123@gmail.com']
   spec.summary       = %q{Rails db configuration, outside of rails}
   spec.description   = %q{Use the database configuration from a rails app, without using rails}
-  spec.homepage      = ''
+  spec.homepage      = 'https://github.com/cameron-martin/rails_db_config_resolver'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
