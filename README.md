@@ -5,7 +5,7 @@ This is useful when wanting to connect to rail's database without loading the ra
 when wanting to use [em-pg-client][1] for a helper process in a rails app.
 
 Values from `ENV['DATABASE_URL']` and `config/database.yml` are merged. `ENV['DATABASE_URL']` trumps `config/database.yml`.
-By looking at [the rails guide][2], I _think_ the url field in `database.yml` trumps both of them, so I'm not sure, so I left it out.
+By looking at [the rails guide][2], I _think_ the url field in `database.yml` trumps both of them, but I'm not sure, so I left it out.
 
 ## Installation
 
